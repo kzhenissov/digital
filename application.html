@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito:wght@900&family=Pridi:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Заполните бриф</title>
+</head>
+
+<body>
+    <section class="application">
+        <div class="container">
+            <div class="application__top header__top">
+                <nav class="menu">
+                    <button class="menu__btn menu__btn-black">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Услуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo-black.svg" alt="">
+                </a>
+                <a class="header__top-btn header__btn">
+                    Оставить заявку
+                </a>
+            </div>
+            <div class="application__content">
+                <h3 class="application__title">
+                    Заполните бриф
+                </h3>
+                <p class="application__subtitle">
+                    Чтобы начать решать вашу задачу, нам нужно поговорить. Заполните бриф, и мы свяжемся.
+                </p>
+               
+                <form class="application__form" id="form" action="mail.php" method="post">
+                    <ul class="application__choose-list">
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn application__choose-select">Комплекс проект</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">NFT</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Дополнительная реальность</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Телеграм-бот</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn application__choose-select">UI/UX-дизайн</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Мобильное приложение</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">No-Code сайт</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Корпоративный сайт</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">E-commerce</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">CRM-система</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">MVP</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Стаптап, цифровой сервис</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Другое</button>
+                        </li>
+                        <li class="application__choose-item">
+                            <button class="application__choose-btn">Консалтинг</button>
+                        </li>
+                    </ul>
+                    <p class="application__form-text">Задача</p>
+                    <textarea class="application__form-textarea" name="user__message" id=""
+                        placeholder="Опишите вашу задачу"></textarea>
+                    <div class="applictation__form-upload">
+                        <input class="application__form-upload--file" id="file" type="file" name="user_file">
+                        <label class="applictation__form-upload--label" for="file">Прикрепить файл</label>
+                        <span class="applictation__form-upload--span">до 50 Мб</span>
+                    </div>
+                    <a class="application__form-link" href="#"></a>
+                    <p class="application__form-text">Задача</p>
+                    <input class="application__form-input--name" type="text" placeholder="Ваше имя" name="user_name">
+                    <input class="application__form-input--phone" type="text" placeholder="Номер телефон" name="user_phone">
+                    <button class="application__form-btn" type="submit">Отправить бриф</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-black">
+        <div class="container">
+            <h3 class="footer-black__title">
+                Свяжитесь с нами
+            </h3>
+            <ul class="footer-black__list">
+                <li class="footer-black__item">
+                    <p class="footer-black__item-title">Email</p>
+                    <a class="footer-black__item-text" href="mailto: hello@codefactory.kz">hello@codefactory.kz</a>
+                </li>
+                <li class="footer-black__item">
+                    <p class="footer-black__item-title">Контакты</p>
+                    <a class="footer-black__item-text" href="tel: 77022891391">+7 702 289 13 91</a>
+                </li>
+                <li class="footer-black__item">
+                    <p class="footer-black__item-title">Мессенджеры</p>
+                    <a class="footer-black__item-text" href="tel: 77022891391">+7 702 289 13 91</a>
+                </li>
+                <li class="footer-black__item">
+                    <p class="footer-black__item-title">Мы в соцсетях</p>
+                    <ul class="footer-black__social-list">
+
+                        <li class="footer-black__social-item">
+                            <a class="footer-black__social-link" href="#">
+                                <img class="footer-black__social-img" src="images/telegram-white.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer-black__social-item">
+                            <a class="footer-black__social-link" href="#">
+                                <img class="footer-black__social-img" src="images/behance-white.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer-black__social-item">
+                            <a class="footer-black__social-link" href="#">
+                                <img class="footer-black__social-img" src="images/whatsapp-white.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer-black__social-item">
+                            <a class="footer-black__social-link" href="#">
+                                <img class="footer-black__social-img" src="images/linkedin-white.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer-black__social-item">
+                            <a class="footer-black__social-link" href="#">
+                                <img class="footer-black__social-img" src="images/instagram-white.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="footer-black__copyright">&copy2021 CodeFactory</p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
