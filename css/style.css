@@ -129,7 +129,6 @@ body {
     bottom: 0px;
     left: 0;
 }
-
 .menu__btn-black span,
 .menu__btn-black span::before,
 .menu__btn-black span::after {
@@ -151,7 +150,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 .header__wrapper {
     position: relative;
 }
@@ -166,7 +164,6 @@ body {
     top: 0;
     z-index: 0;
 }
-
 .header__top {
     font-family: 'ProximaNova-Bold';
 
@@ -1689,7 +1686,6 @@ body {
     .application__form-textarea {
         width: 100%;
     }
-
     /* .project-all__item-box--title {
         font-size: 20px;
         line-height: 26px;
@@ -1699,7 +1695,6 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
-
     .reviews__list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1827,20 +1822,16 @@ body {
     .header__top-btn::after {
         top: 11px;
     }
-
     .project-all__item {
         display: block;
     }
-
     .project-all__item-content {
         /* display: inline-block; */
         width: 100%;
     }
-
     .project-all__item-box {
         padding: 39px 20px 96px 20px;
     }
-
     .reviews__list {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -2035,22 +2026,16 @@ body {
         right: 23px;
         top: 10px;
     }
-
-    .project-all__item-box--title,
-    .project-all__item-content--title {
+    .project-all__item-box--title, .project-all__item-content--title {
         text-align: center;
     }
-
-    .project-all__item-box--text,
-    .project-all__item-content--text {
+    .project-all__item-box--text, .project-all__item-content--text {
         text-align: center;
     }
-
     .project-all__item-content--link {
         display: block;
         text-align: center;
     }
-
     .project-all__item-content--link::after {
         right: 48px;
     }
