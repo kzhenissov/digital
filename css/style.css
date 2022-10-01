@@ -993,6 +993,7 @@ body {
 .application__choose-list {
     max-width: 1116px;
     margin-bottom: 24px;
+    user-select: none;
 }
 
 .application__choose-item {
@@ -1018,6 +1019,9 @@ body {
 
 .application__form {
     margin: 0;
+}
+.application__form * {
+    outline: none;
 }
 
 .application__form-text {
