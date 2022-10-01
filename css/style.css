@@ -151,7 +151,7 @@ body {
     background-color: #333333;
     color: #FFFFFF;
 
-    background-image: url(../images/header-bg.svg);
+    background-image: url(../images/header-bg.jpg);
     background-position: center 79px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1872,6 +1872,9 @@ body {
 }
 
 @media (max-width: 510px) {
+    .header__wrapper::after {
+        display: none;
+    }
     .header__top-btn {
         display: none;
     }
