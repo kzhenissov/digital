@@ -10,8 +10,9 @@ a {
 }
 
 html {
-    scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
-  }
+    scroll-behavior: smooth;
+    /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
 
 ul {
     margin: 0;
@@ -147,7 +148,7 @@ body {
 .logo__img {}
 
 .header {
-    background-color: #615EF4;
+    background-color: #333333;
     color: #FFFFFF;
 
     background-image: url(../images/header-bg.svg);
@@ -346,7 +347,7 @@ body {
 
 /* achievement */
 .achievement {
-    background-color: #615EF4;
+    background-color: #333333;
     padding-top: 56px;
     padding-bottom: 47px;
 }
@@ -621,7 +622,7 @@ body {
 
 .services {
     padding-top: 100px;
-    background-color: #615EF4;
+    background-color: #333333;
     color: #FFFFFF;
 
     background-image: url(../images/services-bg.svg);
