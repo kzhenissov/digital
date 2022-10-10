@@ -328,6 +328,7 @@ body {
     justify-content: space-between;
 }
 
+
 .trust__item {
     text-align: center;
 }
@@ -339,7 +340,9 @@ body {
 .trust__logo {
     margin-bottom: 32px;
 }
-
+.trust__list:nth-child(2) .trust__logo {
+    height: 90px;
+}
 .trust__text {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -494,7 +497,7 @@ body {
 }
 
 .project__text {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 29px;
     color: #333333;
     margin-bottom: 89px;
@@ -2070,4 +2073,9 @@ body {
     .project-all__item-content--link::after {
         right: 48px;
     }
+}
+
+.comment__img {
+    width: 200px;
+    margin-left: 100px;
 }
