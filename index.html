@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header todos" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__top">
@@ -94,20 +94,12 @@
                         </div>
                     </div>
                 </div>
-                <ul class="header__social-list">
-                    <li class="header__social-item">
-                        <img class="header__social-img" src="images/facebook.svg" alt="">
-                    </li>
-                    <!-- <li class="header__social-item">
-                        <img class="header__social-img" src="images/behance.svg" alt="">
-                    </li> -->
-                    <!-- <li class="header__social-item">
-                        <img class="header__social-img" src="images/linkedin.svg" alt="">
-                    </li> -->
-                    <li class="header__social-item">
-                        <img class="header__social-img" src="images/instagram.svg" alt="">
-                    </li>
-                </ul>
+                <div class="mode" id="mode">
+                    <label class="mode__label">
+                        <input class="mode__checkbox" id="myCheck" type="checkbox" onclick="changeTheme()">
+                        <span class="mode__check"></span>
+                    </label>
+                </div>
             </div>
         </div>
     </header>
@@ -118,25 +110,33 @@
             </h3>
             <ul class="trust__list">
                 <li class="trust__item">
-                    <img class="trust__logo" src="images/palata-shym.png" alt="">
+                    <a class="trust__item-link" href="https://abitech.kz/">
+                        <img class="trust__logo" src="images/abitech.png" alt="">
+                    </a>
                     <p class="trust__text">
-                        Полная разработка сайта с UI и UX  дизайном
+                        Полная разработка сайта с UI и UX дизайном
                     </p>
                 </li>
                 <li class="trust__item">
-                    <img class="trust__logo" src="images/halyk.svg" alt="">
+                    <a class="trust__item-link" href="https://profit.kz/">
+                        <img class="trust__logo" src="images/profit_logo.svg" alt="">
+                    </a>
                     <p class="trust__text">
                         Помогли определиться с айдентикой сайта и с разработкой UI.
                     </p>
                 </li>
                 <li class="trust__item">
-                    <img class="trust__logo" src="images/bigw-logo.svg" alt="">
+                    <a class="trust__item-link" href="https://www.agatit.pl/en/home-3/">
+                        <img class="trust__logo" src="images/agat-logo.png.crdownload" alt="">
+                    </a>
                     <p class="trust__text">
                         Наша компания помогала в разработке с FRONT END частью и UI.
                     </p>
                 </li>
                 <li class="trust__item">
-                    <img class="trust__logo" src="images/apify.png" alt="">
+                    <a class="trust__item-link" href="https://apify.com/?fpr=m4r5q">
+                        <img class="trust__logo" src="images/apify.png" alt="">
+                    </a>
                     <p class="trust__text">
                         Создали сайт с полным дизайном и разработкой.
                     </p>
@@ -144,7 +144,7 @@
             </ul>
         </div>
     </section>
-    <section class="achievement">
+    <section class="achievement" id="achievement">
         <div class="container">
             <div class="achievement__inner">
                 <div class="achievement__box">
@@ -172,24 +172,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="show">
-        <div class="container">
-            <div class="show__inner">
-                <h2 class="show__title">
-                    SHOW <span>REEL</span>
-                </h2>
-                <div class="show__box">
-                    <img class="show__img" src="images/show-img.png" alt="">
-                    <p class="show__text">
-                        Почему мы? Все за одну минуту
-                    </p>
-                </div>
-                <a class="show__btn" href="#">
-                    <img class="show__btn-img" src="images/play-btn.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </section> -->
     <section class="project" id="project">
         <div class="container">
             <div class="project__wrapper">
@@ -205,7 +187,8 @@
                             Автоматизация внутренних процессов.
                         </h4>
                         <p class="project__item-text">
-                            Мы помогаем в автоматизации процессов малому и среднему бизнесу с целью улучшения и ускорения процессов бизнеса.
+                            Мы помогаем в автоматизации процессов малому и среднему бизнесу с целью улучшения и
+                            ускорения процессов бизнеса.
                         </p>
                     </li>
                     <li class="project__item">
@@ -213,7 +196,8 @@
                             Разработка платформ для образования
                         </h4>
                         <p class="project__item-text">
-                            В нынешних реалиях тренд на дистанционное образование только растет, мы помогаем в создании личных площадок для специалистов в этой отрасли.
+                            В нынешних реалиях тренд на дистанционное образование только растет, мы помогаем в создании
+                            личных площадок для специалистов в этой отрасли.
                         </p>
                     </li>
                     <li class="project__item">
@@ -229,7 +213,8 @@
                             Дизайн
                         </h4>
                         <p class="project__item-text">
-                            Создаем уникальный дизайн для ваших цифровых продуктов и оффлайн продуктов, повышаем узнаваемость и занимаемся редизайном.
+                            Создаем уникальный дизайн для ваших цифровых продуктов и оффлайн продуктов, повышаем
+                            узнаваемость и занимаемся редизайном.
                         </p>
                     </li>
                     <li class="project__item">
@@ -237,7 +222,8 @@
                             Бизнес аналитика
                         </h4>
                         <p class="project__item-text">
-                            Проводим бизнес аналитику нацеленную на оптимизацию внутренних бизнес процессов с целью улучшения производительности
+                            Проводим бизнес аналитику нацеленную на оптимизацию внутренних бизнес процессов с целью
+                            улучшения производительности
                         </p>
                     </li>
                     <li class="project__item">
@@ -245,13 +231,11 @@
                             Другое
                         </h4>
                         <p class="project__item-text">
-                            Разработка архитектура, чат-боты, технический анализ, консультация и множество других digital услуг.
+                            Разработка архитектура, чат-боты, технический анализ, консультация и множество других
+                            digital услуг.
                         </p>
                     </li>
                 </ul>
-                <!-- <div class="project__btn">
-                    <a class="project__btn-link" href="projectAll.html">Посмотреть все проекты</a>
-                </div> -->
                 <div class="project__circle"></div>
             </div>
         </div>
@@ -326,7 +310,7 @@
                     <img class="comment__img" src="images/altyn-header.png" alt="">
                     <div class="comment__name">
                         <p class="comment__name-text">
-                            Шалкар Тылеужанов
+                            Алтын Джунусова
                         </p>
                         <span class="comment__name-bg"></span>
                     </div>
@@ -335,7 +319,7 @@
                     </p>
                 </div>
                 <div class="comment__box-second comment__box">
-                    <img class="comment__img" src="images/shalkar-header.png" alt="">
+                    <img class="comment__img" src="images/rakhat.png" alt="">
                     <div class="comment__name">
                         <p class="comment__name-text">
                             Рахат Сапаров
@@ -361,33 +345,6 @@
             </form>
         </div>
     </section>
-    <!-- <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Свяжитесь с нами
-                    </h3>
-                    <p class="footer__text">
-                        Email
-                        <span>hello@company.kz</span>
-                    </p>
-                </div>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <img class="footer__link-img" src="images/footer-1.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <img class="footer__link-img" src="images/footer-2.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer> -->
     <footer class="footer-black">
         <div class="container">
             <h3 class="footer-black__title">
@@ -400,11 +357,11 @@
                 </li>
                 <li class="footer-black__item">
                     <p class="footer-black__item-title">Контакты</p>
-                    <a class="footer-black__item-text" href="tel: 77022891391">+7 702 289 13 91</a>
+                    <a class="footer-black__item-text" href="tel: 77081607476">+7 708 160 7476</a>
                 </li>
                 <li class="footer-black__item">
                     <p class="footer-black__item-title">Мессенджеры</p>
-                    <a class="footer-black__item-text" href="tel: 77022891391">+7 702 289 13 91</a>
+                    <a class="footer-black__item-text" href="tel: 77081607476">+7 708 160 7476</a>
                 </li>
                 <li class="footer-black__item">
                     <p class="footer-black__item-title">Мы в соцсетях</p>
@@ -420,7 +377,8 @@
                             </a>
                         </li> -->
                         <li class="footer-black__social-item">
-                            <a class="footer-black__social-link" href="https://api.whatsapp.com/send/?phone=77022891391&text=Здравствуйте%2C+у+меня+есть+вопрос">
+                            <a class="footer-black__social-link"
+                                href="https://api.whatsapp.com/send/?phone=77022891391&text=Здравствуйте%2C+у+меня+есть+вопрос">
                                 <img class="footer-black__social-img" src="images/whatsapp-white.svg" alt="">
                             </a>
                         </li>
