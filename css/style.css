@@ -11,7 +11,7 @@ a {
 
 html {
     scroll-behavior: smooth;
-    /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+    /* ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð¾ scroll-behavior Ð½Ðµ Ð½Ð°ÑÐ»ÐµÐ´ÑƒÐµÑ‚ÑÑ, Ð¿Ñ€Ð¸Ð¼ÐµÐ½ÑÐµÑ‚ÑÑ Ðº Ð¿Ñ€Ð¾ÐºÑ€ÑƒÑ‡Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ð¼ Ð±Ð»Ð¾ÐºÐ°Ð¼ */
 }
 
 ul {
@@ -146,10 +146,10 @@ body {
 .logo__img {}
 
 .header {
-    background-color: #615EF4;
+    background-color: #333333;
     color: #FFFFFF;
 
-    background-image: url(../images/header-bg-light.jpg);
+    background-image: url(../images/header-bg-dark-1.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,10 +303,7 @@ body {
 
 .header__social-img {}
 
-.comment__img {
-    width: 200px;
-    margin-left: 100px;
-}
+
 
 /* .comment__box-first .comment__img {
     margin-top: -8px
@@ -403,12 +400,13 @@ body {
 }
 
 .trust__item+.trust__item {
-    margin-left: 97px;
+    margin-left: 15px;
 }
 
 .trust__logo {
     margin-bottom: 32px;
     height: 90px;
+    width: 250px;
 }
 
 .trust__text {
@@ -421,7 +419,7 @@ body {
 
 /* achievement */
 .achievement {
-    background-color: #615EF4;
+    background-color: #333333;
     padding-top: 56px;
     padding-bottom: 47px;
 }
@@ -562,7 +560,7 @@ body {
 }
 
 .project__text {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 29px;
     color: #333333;
     margin-bottom: 89px;
@@ -693,7 +691,7 @@ body {
 
 .services {
     padding-top: 100px;
-    background-color: #615EF4;
+    background-color: #333333;
     color: #FFFFFF;
 
     background-image: url(../images/services-bg.svg);
@@ -814,7 +812,6 @@ body {
     z-index: 3;
 }
 
-
 .comment__box-first {
     background-image: url(../images/comment-person-bg-1.svg);
     background-repeat: no-repeat;
@@ -838,7 +835,11 @@ body {
     position: relative;
 }
 
-.comment__img {}
+.comment__img {
+    width: 390px;
+    height: 315px;
+    /* margin-left: 100px; */
+}
 
 .comment__box-first .comment__name-text {
     color: #FFFFFF;
@@ -853,12 +854,16 @@ body {
     left: -100px;
 }
 
+.comment__box-first .comment__img {
+    margin-top: -36px;
+}
+
 .comment__box-first .comment__name-text {
     transform: rotate(9deg);
-    padding-top: 59px;
+    padding-top: 54px;
     position: relative;
     z-index: 5;
-    margin-left: -65px;
+    margin-left: -19px;
 }
 
 .comment__box-first .comment__name-bg {
@@ -886,7 +891,7 @@ body {
 .comment__box-second .comment__name-text {
     transform: rotate(-7deg);
     padding-top: 32px;
-    padding-right: 40px;
+    padding-right: 87px;
 
     position: relative;
     z-index: 3;
@@ -894,7 +899,7 @@ body {
 }
 
 .comment__box-first .comment__text {
-    margin-left: -35px;
+    margin-left: -67px;
     border-radius: 24px 24px 24px 0;
 }
 
@@ -921,6 +926,7 @@ body {
     top: 0px;
 }
 
+/* contacts */
 .contacts {
     margin-bottom: 135px;
     padding-top: 158px;
@@ -963,7 +969,6 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #999999;
-    padding: 18px 32px;
 }
 
 .contacts__form-btn {
@@ -984,7 +989,60 @@ body {
     top: 10px;
 }
 
-.footer {
+/* footer */
+.footer-black {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 48px 0;
+}
+
+.footer-black__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+
+.footer-black__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+}
+
+.footer-black__item {}
+
+.footer-black__item-title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
+
+.footer-black__item-text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer-black__social-list {
+    display: flex;
+}
+
+.footer-black__social-item {}
+
+.footer-black__social-item+.footer-black__social-item {
+    margin-left: 24px;
+}
+
+.footer-black__social-link {}
+
+.footer-black__social-img {}
+
+.footer-black__copyright {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* .footer {
     background-color: #F2F2F2;
     padding: 56px 0 61px 0;
 }
@@ -1041,7 +1099,7 @@ body {
     padding-top: 9px;
 }
 
-.footer__link-img {}
+.footer__link-img {} */
 
 /* application */
 .application {
@@ -1218,59 +1276,8 @@ body {
     top: 11px;
 }
 
-.footer-black {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 48px 0;
-}
 
-.footer-black__title {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 32px;
-}
-
-.footer-black__list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 63px;
-}
-
-.footer-black__item {}
-
-.footer-black__item-title {
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 16px;
-}
-
-.footer-black__item-text {
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.footer-black__social-list {
-    display: flex;
-}
-
-.footer-black__social-item {}
-
-.footer-black__social-item+.footer-black__social-item {
-    margin-left: 24px;
-}
-
-.footer-black__social-link {}
-
-.footer-black__social-img {}
-
-.footer-black__copyright {
-    font-size: 20px;
-    line-height: 24px;
-}
-
-
+/* reviews page */
 .reviews__content {
     color: #333333;
     margin-top: 78px;
@@ -1337,6 +1344,7 @@ body {
     margin-top: 4px;
 }
 
+/* project all */
 .project-all__content {
     margin-top: 64px;
     margin-bottom: 129px;
@@ -1534,6 +1542,40 @@ body {
     .footer__list {
         right: 0;
     }
+
+    .trust__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 70px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .comment__inner {
+        display: block;
+        text-align: center;
+    }
+
+
+    .comment__box-first {
+        display: inline-block;
+        margin-right: 150px;
+        margin-bottom: 50px;
+    }
+
+    .comment__box-second {
+        display: inline-block;
+    }
+
+    .comment__link {
+        bottom: -79px;
+        right: calc(50% - 110px);
+        display: inline-block;
+    }
+
+    .comment__img {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 1310px) {
@@ -1545,25 +1587,7 @@ body {
         padding-bottom: 130px;
     }
 
-    .comment__inner {
-        display: block;
-        text-align: center;
-    }
 
-    .comment__box {
-        display: inline-block;
-    }
-
-    .comment__box-first {
-        margin-right: 90px;
-        margin-bottom: 50px;
-    }
-
-    .comment__link {
-        bottom: -79px;
-        right: calc(50% - 110px);
-        display: inline-block;
-    }
 }
 
 @media (max-width: 1170px) {
@@ -1637,7 +1661,7 @@ body {
     }
 
     .trust__item {
-        background-color: #84ECF2;
+        /* background-color: #84ECF2; */
         padding: 50px 10px;
         border-radius: 12px;
     }
@@ -1745,9 +1769,11 @@ body {
     .header__top-btn {
         display: none;
     }
+
     .mode {
         right: 285px;
     }
+
     .header__content {
         margin-left: 0;
         margin-right: 0;
@@ -1777,16 +1803,16 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .comment__box-first {
+    /* .comment__box-first {
         margin-top: 0px;
         margin-right: 0px;
     }
 
     .comment__box-second {
         margin-right: 0px;
-    }
+    } */
 
-    .comment__box-first .comment__name {
+    /* .comment__box-first .comment__name {
         top: 292px;
         left: 213px;
     }
@@ -1806,19 +1832,22 @@ body {
 
     .comment__box-first {
         margin-left: 0;
-    }
+    } */
 
     .comment__box-first .comment__name-bg {
         top: 21px;
-        left: -92px;
+        left: 0px;
         width: 200px;
     }
-
+    .comment__box-first {
+        margin-right: 0;
+        margin-left: 0;
+    }
     .contacts__form-phone {
         display: block;
         margin: 0 auto 50px;
     }
-
+    
     .application__form-input--name,
     .application__form-input--phone,
     .application__form-btn {
@@ -1828,6 +1857,10 @@ body {
 
     .application__form-input--name {
         margin-bottom: 20px;
+    }
+    .comment__box-first .comment__name-text {
+        padding-top: 59px;
+        margin-left: 65px;
     }
 }
 
@@ -1851,6 +1884,7 @@ body {
         top: 233px;
         left: 66px;
     }
+    
 }
 
 @media (max-width: 650px) {
@@ -1883,6 +1917,14 @@ body {
     .reviews__list {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .comment__box-first {
+        padding-top: 130px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
 }
 
 /* don't change */
@@ -1898,6 +1940,7 @@ body {
     .services__list {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .mode {
         top: 152px;
         right: 143px;

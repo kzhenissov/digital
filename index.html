@@ -94,15 +94,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="mode" id="mode">
+                <!-- <div class="mode" id="mode">
                     <label class="mode__label">
                         <input class="mode__checkbox" id="myCheck" type="checkbox" onclick="changeTheme()">
                         <span class="mode__check"></span>
                     </label>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
+
     <section class="trust">
         <div class="container">
             <h3 class="trust__title">
@@ -110,8 +111,8 @@
             </h3>
             <ul class="trust__list">
                 <li class="trust__item">
-                    <a class="trust__item-link" href="https://abitech.kz/">
-                        <img class="trust__logo" src="images/abitech.png" alt="">
+                    <a class="trust__item-link" href="https://studylink.com/">
+                        <img class="trust__logo" src="images/stadylink.png" alt="">
                     </a>
                     <p class="trust__text">
                         Полная разработка сайта с UI и UX дизайном
@@ -134,8 +135,8 @@
                     </p>
                 </li>
                 <li class="trust__item">
-                    <a class="trust__item-link" href="https://apify.com/?fpr=m4r5q">
-                        <img class="trust__logo" src="images/apify.png" alt="">
+                    <a class="trust__item-link" href="https://www.codecademy.com/">
+                        <img class="trust__logo" src="images/codecademy.png" alt="">
                     </a>
                     <p class="trust__text">
                         Создали сайт с полным дизайном и разработкой.
@@ -144,6 +145,7 @@
             </ul>
         </div>
     </section>
+    
     <section class="achievement" id="achievement">
         <div class="container">
             <div class="achievement__inner">
@@ -172,6 +174,7 @@
             </div>
         </div>
     </section>
+    
     <section class="project" id="project">
         <div class="container">
             <div class="project__wrapper">
@@ -240,6 +243,7 @@
             </div>
         </div>
     </section>
+    
     <section class="services" id="services">
         <div class="container">
             <div class="services__inner">
@@ -303,14 +307,15 @@
             </div>
         </div>
     </section>
+    
     <div class="comment" id="comment">
         <div class="container">
             <div class="comment__inner">
                 <div class="comment__box-first comment__box">
-                    <img class="comment__img" src="images/altyn-header.png" alt="">
+                    <img class="comment__img" src="images/comment-person-1.png" alt="">
                     <div class="comment__name">
                         <p class="comment__name-text">
-                            Алтын Джунусова
+                            Алтын
                         </p>
                         <span class="comment__name-bg"></span>
                     </div>
@@ -319,10 +324,10 @@
                     </p>
                 </div>
                 <div class="comment__box-second comment__box">
-                    <img class="comment__img" src="images/rakhat.png" alt="">
+                    <img class="comment__img" src="images/comment-person-2.png" alt="">
                     <div class="comment__name">
                         <p class="comment__name-text">
-                            Рахат Сапаров
+                            Рахат
                         </p>
                         <span class="comment__name-bg"></span>
                     </div>
@@ -330,21 +335,25 @@
                         Выпускник университета МУИТ, более пяти лет опыта в мобильной разработке.
                     </p>
                 </div>
-                <a class="comment__link" href="reviews.html">Остальные специалисты</a>
             </div>
+            <a class="comment__link" href="reviews.html">Остальные специалисты</a>
         </div>
     </div>
+    
     <section class="contacts" id="contacts">
         <div class="container">
             <h3 class="contacts__title">
                 Оставь свой номер и начни проекты с NameCompany
             </h3>
-            <form class="contacts__form" action="send.html" method="post">
-                <input class="contacts__form-phone" type="tel" name="phone" placeholder="+7(707) 777-77-77">
+            <form class="contacts__form" action="./send.html" method="post">
+                <input class="contacts__form-phone" type="tel" name="phone" placeholder="+7(707) 777-77-77"
+                pattern="^[+][0-9][0-9]{10}$"
+                required>
                 <button class="contacts__form-btn" type="submit">Запросить звонок</button>
             </form>
         </div>
     </section>
+
     <footer class="footer-black">
         <div class="container">
             <h3 class="footer-black__title">
